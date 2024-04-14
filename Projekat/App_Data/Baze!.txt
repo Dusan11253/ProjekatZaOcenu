@@ -1,0 +1,25 @@
+﻿create table Korisnici
+(
+Id int primary key identity(1,1),
+Ime nvarchar(25) not null,
+email nvarchar(25) not null unique,
+Sifra nvarchar(25) not null
+)
+
+insert into Korisnici values('Krle','krle@gmail.com','123321')
+insert into Korisnici values('Admin','admin@gmail.com','123456')
+
+
+create table Automobili
+(
+id int primary key not null, 
+Naziv nvarchar(20) not null
+Cena int not null
+)
+
+insert into Automobili values(12,'BMW',32000)
+
+
+
+
+
